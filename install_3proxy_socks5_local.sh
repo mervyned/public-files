@@ -151,7 +151,7 @@ resolve_bind_ips() {
 install_deps() {
   if command -v apt-get >/dev/null 2>&1; then
     export DEBIAN_FRONTEND=noninteractive
-    apt-get update -y
+    #apt-get update -y
     apt-get install -y ca-certificates curl
   else
     die "当前版本只支持 apt-get 系统"
